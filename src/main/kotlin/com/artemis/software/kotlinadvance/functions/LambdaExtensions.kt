@@ -2,7 +2,9 @@ package com.artemis.software.kotlinadvance.functions
 
 class Request(val method: String, val query: String, val contentType: String)
 class Response(var contents: String, var status: Status){
-    fun status(status: Status.() -> Unit){
+
+    operator fun invoke(arg: Status.() -> Unit) {
+
 
     }
 }
@@ -19,7 +21,6 @@ class RouteHandler(val request: Request, val response: Response){
 
 fun routeHandler(path: String, f: RouteHandler.() -> Unit): RouteHandler.() -> Unit = f
 
-fun response(response: Response.() -> Unit){}
 
 fun main(args: Array<String>){
 
@@ -29,11 +30,22 @@ fun main(args: Array<String>){
         }
 
         response {
-            status {
+
                 code = 404
                 description = "Not found"
-            }
+
         }
+
+    }
+
+    val manager = Manager()
+    manager("Do something?")
+}
+
+
+class Manager {
+
+    operator fun invoke(value: String){
 
     }
 }
