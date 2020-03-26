@@ -7,5 +7,7 @@ public class NestedClasses {
         //DirectoryExplorer.PermissionCheck permissionCheck = new DirectoryExplorer.PermissionCheck();
 
         Log log = Log.createFileLog("file.txt");
+
+        //Log logDirectly = Log();
     }
 }
