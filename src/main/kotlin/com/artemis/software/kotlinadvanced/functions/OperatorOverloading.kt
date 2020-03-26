@@ -1,4 +1,4 @@
-package com.artemis.software.kotlinadvance.functions
+package com.artemis.software.kotlinadvanced.functions
 
 data class Time(val hours: Int, val mins: Int){
     operator fun plus (time: Time): Time {

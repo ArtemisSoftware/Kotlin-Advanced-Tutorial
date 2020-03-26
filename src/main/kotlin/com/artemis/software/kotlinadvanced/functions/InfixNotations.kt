@@ -1,4 +1,4 @@
-package com.artemis.software.kotlinadvance.functions
+package com.artemis.software.kotlinadvanced.functions
 
 infix fun String.shouldBeEqualTo(value: String) = this == value
 

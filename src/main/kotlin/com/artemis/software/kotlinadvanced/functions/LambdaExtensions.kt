@@ -1,4 +1,4 @@
-package com.artemis.software.kotlinadvance.functions
+package com.artemis.software.kotlinadvanced.functions
 
 class Request(val method: String, val query: String, val contentType: String)
 class Response(var contents: String, var status: Status){

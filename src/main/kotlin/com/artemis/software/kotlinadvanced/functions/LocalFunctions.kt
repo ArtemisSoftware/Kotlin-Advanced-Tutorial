@@ -1,4 +1,4 @@
-package com.artemis.software.kotlinadvance.functions
+package com.artemis.software.kotlinadvanced.functions
 
 fun foo(fooParam: String){
 

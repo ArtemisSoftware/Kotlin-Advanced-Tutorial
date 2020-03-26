@@ -1,4 +1,4 @@
-package com.artemis.software.kotlinadvance.classes
+package com.artemis.software.kotlinadvanced.classes
 
 class Customer(){
 
