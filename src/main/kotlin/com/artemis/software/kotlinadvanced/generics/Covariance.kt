@@ -13,6 +13,12 @@ interface ReadOnlyRepo<out T> {
     fun getAll(): List<T>
 }
 
+interface WriteRepo<in T> {
+
+    fun save(obj: T)
+    fun saveAll(list: List<T>)
+}
+
 fun main(args: Array<String>) {
 
 
