@@ -13,6 +13,8 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     testCompile("junit", "junit", "4.12")
+
+    //implementation "org.jetbrains.kotlin:kotlin-reflect:1.3.61"
 }
 
 configure<JavaPluginConvention> {
