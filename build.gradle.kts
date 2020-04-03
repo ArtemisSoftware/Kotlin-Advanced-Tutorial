@@ -14,8 +14,13 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
     testCompile("junit", "junit", "4.12")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.5")
-    //implementation "org.jetbrains.kotlin:kotlin-reflect:1.3.61"
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.3.61")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-generate:0.2-alpha-1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-async:0.2-alpha-1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-rx:0.2-alpha-1")
+
 }
 
 configure<JavaPluginConvention> {
